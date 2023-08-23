@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:layout_constraintDimensionRatio="3:1">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pokemon_image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pokemon_image"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toEndOf="@+id/name_header"
+        app:layout_constraintBaseline_toBaselineOf="@id/name_header"
+        tools:text="Pikachu"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/height_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/height"
+        app:layout_constraintTop_toBottomOf="@+id/name_header"
+        app:layout_constraintStart_toEndOf="@id/pokemon_image"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/height_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toEndOf="@+id/height_header"
+        app:layout_constraintBaseline_toBaselineOf="@id/height_header"
+        tools:text="6"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/weight_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/weight"
+        app:layout_constraintTop_toBottomOf="@+id/height_header"
+        app:layout_constraintStart_toEndOf="@id/pokemon_image"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/weight_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toEndOf="@+id/weight_header"
+        app:layout_constraintBaseline_toBaselineOf="@id/weight_header"
+        tools:text="65"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
